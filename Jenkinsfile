@@ -1,4 +1,5 @@
 pipeline {
+    echo 'Building..---------------------------'
     agent any
 
     stages {
