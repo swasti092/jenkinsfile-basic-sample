@@ -28,8 +28,8 @@ node {
         throw err
     }
 	post { 
-	  success {
-		  mail to: swasti092@gmail.com, subject: 'the pipeline success -'
-	  }
+	  always {
+      echo ‘I will always execute this!’
+    		}
 	}
 }
