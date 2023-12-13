@@ -27,9 +27,9 @@ node {
         currentBuild.result = 'FAILED'
         throw err
     }
-	post { 
-	  always {
+	finally { 
+	  
       echo ‘I will always execute this!’
-    		}
+    		
 	}
 }
