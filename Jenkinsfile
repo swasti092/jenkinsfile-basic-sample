@@ -29,7 +29,7 @@ node {
     }
 	post { 
 	  success {
-		  mail to: swasti092@gmail.com, subject: 'the pipeline success :)'
+		  mail to: swasti092@gmail.com, subject: 'the pipeline success -'
 	  }
 	}
 }
