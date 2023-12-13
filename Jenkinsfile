@@ -27,4 +27,9 @@ node {
         currentBuild.result = 'FAILED'
         throw err
     }
+	post { 
+	  success {
+		  mail to: swasti092@gmail.com, subject: 'the pipeline success :)'
+	  }
+	}
 }
