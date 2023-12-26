@@ -13,6 +13,7 @@ node {
 		script {
 					data = readYaml (file: 'application.yml') 
 		}
+		echo data.toString()
 	}
         stage ('Tests') {
 	        parallel 'static': {
