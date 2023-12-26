@@ -1,0 +1,26 @@
+envName: CERT
+listOrPattern: 'false'
+applicationListOrPattern: global-alm_ale-test-borrar
+regionList:
+- regionName: CAN1
+  regionProperties:
+  - propValue: hsfgbfjgjbg
+    propName: OSE3_TOKEN_PROJECT
+    propSecure: 'true'
+  - propValue: api.san1.paas.gsnetcloud.corp
+    propName: OSE3_URL
+    propSecure: 'false'
+  - propValue: '8443'
+    propName: OSE3_URL_PORT
+    propSecure: 'false'
+- regionName: CAN2
+  regionProperties:
+  - propValue: hsfgbfjgjbg
+    propName: OSE3_TOKEN_PROJECT
+    propSecure: 'true'
+  - propValue: api.san2.paas.gsnetcloud.corp
+    propName: OSE3_URL
+    propSecure: 'false'
+  - propValue: '8443'
+    propName: OSE3_URL_PORT
+    propSecure: 'false'
