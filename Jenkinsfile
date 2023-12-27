@@ -9,12 +9,12 @@ node {
         stage ('Build') {
         	sh "echo 'shell scripts to build project...'"
         }
-	stage ('yaml-file'){
-		script {
-					data = readYaml (file: 'application.yml') 
-		}
-		echo data.toString()
-	}
+	// stage ('yaml-file'){
+	// 	script {
+	// 				data = readYaml (file: 'application.yml') 
+	// 	}
+	// 	echo data.toString()
+	//}
         stage ('Tests') {
 	        parallel 'static': {
 	            sh "echo 'shell 1111  scripts to run static tests...'"
